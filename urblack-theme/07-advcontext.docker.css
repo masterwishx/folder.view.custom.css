@@ -274,13 +274,13 @@
 
 /* Graph area */
 .preview-outbox div[id*="comb-grapth-"] {
-  height: 220px !important; /* 220px my default */
+  /* height: 220px !important; */ /* 220px my default */
   background-color: var(--advc-continfo-bg-c);
   border: 1px solid var(--advc-grapharea-brdr-c) !important;
   border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
 }
 .preview-outbox div[id*="comb-grapth-"] canvas {
-  height: 220px !important;
+  /* height: 220px !important; */
   padding: 2px;
   border: 1px solid var(--advc-grapharea-brdr-c);
 }
@@ -288,7 +288,7 @@
 /* Port Mappings and Volume Mappings areas */
 .preview-outbox .info-ports,
 .preview-outbox .info-volumes {
-  height: 220px !important;
+  /* height: 220px !important; */
   overflow: auto;
   padding: 8px;
   color: var(--text-hover) !important;
