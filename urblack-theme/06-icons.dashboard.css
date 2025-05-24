@@ -55,6 +55,17 @@
   color: var(--container-autostart-stopped-icon-c);
 }
 
+/* Spin Icon - Started */
+#docker_view .outer:not(.folder-docker).autostart.started i.fa-spin::before {
+  content: var(--container-spin-started-icon); /* Replace the spinner with a different icon */
+  color: var(--container-autostart-started-icon-c);
+}
+/* Spin Icon - Stopped */
+#docker_view .outer:not(.folder-docker).autostart.stopped i.fa-spin::before {
+  content: var(--container-spin-stopped-icon); /* Replace the spinner with a different icon */
+  color: var(--container-autostart-stopped-icon-c); /* Set spin color of stopped autostart container */
+}
+
 /* Folder Icons */
 /* Replace the default container status icon with an icon
 denoting presence of autostart containers */

@@ -157,7 +157,6 @@ the green arrow or red square shows on containers */
   filter: saturate(var(--exfold-logo-saturation-hov));
   /* Scale the icon on hover */
   transform: scale(var(--exfold-logo-size-hov));
-  filter: saturate(var(--folder-logo-saturation-hov)); /* Override saturate-on-hover effects */
 }
 
 /* Set a height on the folder-name/text area to the same

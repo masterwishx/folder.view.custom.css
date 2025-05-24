@@ -6,11 +6,16 @@ Change these settings to your preference */
 like https://htmlcolorcodes.com/color-picker/ */
 /*************************************************/
 :root {
+  
   --cscheme-accent1: #ff8c2f;
   --cscheme-accent2: #3e6dba;
   --cscheme-accent3: #4f8a10;
+  --cscheme-accent4: #256f92;
+  --cscheme-accent5: #00BCD4;
+  --cscheme-accent6: #9575CD;
 
-  --cscheme-foreline1: #f2f2f2;
+  --cscheme-foreline0: #f2f2f2;
+  --cscheme-foreline1: #607D8B;
   --cscheme-foreline2: #a1a1a1;
   --cscheme-foreline3: #787878;
   --cscheme-foreline4: #444444;
@@ -18,19 +23,26 @@ like https://htmlcolorcodes.com/color-picker/ */
   --cscheme-backfill2: #212121;
   --cscheme-backfill3: #1c1b1b;
   --cscheme-backfill4: #191818;
+  --cscheme-cpu: #00BCD4; /*#26dac8;/*#2b8da3; /* CPU accent color Graph Line*/
+  --cscheme-mem: #673AB7; /*#6725d8;/*#5d6db6; /* Mem accent color Graph Line */
 
   --cscheme-interface-alert: #f0000c;
+  --cscheme-interface-alert2: #fb039a;
   --cscheme-interface-warn: #ff8c2f;
+  --cscheme-interface-warn2: #FFEB3B;
   --cscheme-interface-attention: #d6ff20;
-  --cscheme-interface-passed: #4caf50;
+  --cscheme-interface-attention2: #FFEB3B;
+  --cscheme-interface-passed: #4f8a10;
+  --cscheme-interface-passed2: #4caf50;
   --cscheme-interface-accent: #2cabe3;
 
   --cscheme-link: #486dba; /* Text links within the docker table */
   --cscheme-linkhov: #2cabe3; /* Text links - hover */
   --cscheme-tool-link: #616161; /* Container tools - WebUI, Console, Logs */
-  --cscheme-tool-linkhov: #2cabe3; /* Container tools - hover */
+  --cscheme-tool-linkhov: #9E9E9E; /* Container tools - hover */
   --cscheme-cont-update: #ff8c2f; /* Container with update */
   --cscheme-cont-updatehov: #ffc04c; /* Container with update - hover (only in docker table) */
-  --cscheme-folder-update: #3e6dba; /* Folder on dashboard with update within */
+  --cscheme-folder-update: #ff8c2f; /*#3e6dba; /* Folder on dashboard with update within */
   --cscheme-exfolder-update: #ff8c2f; /* Expanded folder on dashboard with update within */
+  
 }

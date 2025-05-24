@@ -15,28 +15,28 @@
 
 /* Text for the folder's CPU usage */
 #docker_containers .folder-cpu {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  color: var(--cscheme-accent2);
+  color: var(--cscheme-accent4);
 }
 /* Text for the container CPU usage */
 #docker_containers span[class*="cpu-"]:not(.folder-cpu) {
   font-size: 14px;
-  font-weight: normal;
-  color: var(--cscheme-accent2);
+  font-weight: bold;
+  color: var(--cscheme-accent4);
 }
 
 /* Text for the folder's Memory usage */
 #docker_containers .folder-mem {
   font-size: 11px;
   font-weight: bold;
-  color: var(--cscheme-accent2);
+  color: var(--cscheme-accent6);
 }
 /* Text for the container Memory usage */
 #docker_containers span[class*="mem-"]:not(.folder-mem) {
   font-size: 11px;
   font-weight: bold;
-  color: var(--cscheme-accent2);
+  color: var(--cscheme-accent6);
 }
 
 /* CPU Meter */
@@ -49,7 +49,7 @@
 }
 #docker_containers .usage-disk > span:first-child {
   height: 8px;
-  background-color: var(--cscheme-accent3);
+  background-color: var(--cscheme-accent5);
 }
 #docker_containers .usage-disk span:nth-child(2) {
   display: inline-block;
