@@ -113,12 +113,12 @@
 button.folder-dropdown {
   float: none;
 /* Default Black CSS variables) */
---button-text-color: var(--gray-500);
+--button-text-color: var(--cscheme-foreline1);
 /* --button-border: none; */
---button-background: linear-gradient(90deg, var(--gray-400) 0, var(--gray-600)) 0 0 no-repeat, linear-gradient(90deg, var(--gray-400) 0, var(--gray-600)) 0 100% no-repeat, linear-gradient(0deg, var(--gray-400) 0, var(--gray-400)) 0 100% no-repeat, linear-gradient(0deg, var(--gray-600) 0, var(--gray-600)) 100% 100% no-repeat;
+--button-background: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 0 no-repeat, linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1-dark)) 100% 100% no-repeat;
 /* --button-background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%; */
 /* --hover-button-text-color: var(--white); */
---hover-button-background: linear-gradient(90deg, var(--gray-400) 0, var(--gray-600));  
+--hover-button-background: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark));
 }
 /* Version column */
 .folder .updatecolumn {
