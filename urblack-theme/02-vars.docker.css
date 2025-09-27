@@ -24,12 +24,18 @@
   --folder-logo-size: 36px;
   --folder-logo-size-hov: 1.2; /* Changes logo size on hover - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
   --folder-logo-saturation: 1; /* Initial color depth for folder icons - 0 is fully-desaturated (grayscale), 1 is default saturation */
-  --folder-logo-saturation-hov: 2; /* 1 is 100% or default color depth - Values above 1 will saturate beyond default colors, Example: 4 = 400% */  
+  --folder-logo-saturation-hov: 2; /* 1 is 100% or default color depth - Values above 1 will saturate beyond default colors, Example: 4 = 400% */
   --folder-logo-mrgright: 8px;
   --folder-name-text-size: 1.5rem;
   --folder-name-text-weight: bold;
   --folder-startstop-text-size: 1.2rem; /* 0 to hide */
   --folder-startstop-text-mrgleft: 7px; /* 0 to hide */
+  
+  --folder-button-size-hov: 1.08; /* Changes button size on hover - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
+  --folder-button-size-act: 0.98; /* Changes button size on activation (when pressed) - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
+  --folder-button-background: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 0 no-repeat, linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1-dark)) 100% 100% no-repeat;
+  --folder-button-background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+  --folder-button-background-hov: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark));
 
   /* Folder/Container Preview Row */
   --folderpreview-height: calc(var(--container-logo-size) + (var(--container-logo-mrgtopbottom) * 2) + (var(--folderpreview-brdr-width-topbottom) * 2));
