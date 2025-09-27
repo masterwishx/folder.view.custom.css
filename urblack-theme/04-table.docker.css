@@ -97,13 +97,13 @@
     filter: saturate(var(--folder-logo-saturation));
     /* Add a transition for smooth scaling */
     transition: transform 0.3s ease;
-  }
+}
 .folder-outer:hover img.img {
   /* Saturate folder icons - Or as specified in vars */
     filter: saturate(var(--folder-logo-saturation-hov));
     /* Scale the image on hover */
     transform: scale(var(--folder-logo-size-hov));
-  }
+}
 /* Folder name text */
 .folder-outer .folder-appname {
   font-size: var(--folder-name-text-size);
