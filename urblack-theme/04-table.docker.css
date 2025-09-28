@@ -136,6 +136,7 @@ button.folder-dropdown:active {
 .outer.folder-outer .state {
   font-size: var(--folder-startstop-text-size);
   margin-left: var(--folder-startstop-text-mrgleft);
+  color: var(--cscheme-foreline2);
 }
 
 /*************************************************/
