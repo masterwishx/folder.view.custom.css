@@ -33,9 +33,9 @@
   
   --folder-button-size-hov: 1.08; /* Changes button size on hover - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
   --folder-button-size-act: 0.98; /* Changes button size on activation (when pressed) - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
-  --folder-button-background: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 0 no-repeat, linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1-dark)) 100% 100% no-repeat;
+  --folder-button-background: linear-gradient(90deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1)) 0 0 no-repeat, linear-gradient(90deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1-dark)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1)) 100% 100% no-repeat;
   --folder-button-background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
-  --folder-button-background-hov: linear-gradient(90deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1-dark));
+  --folder-button-background-hov: linear-gradient(90deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1));
 
   /* Folder/Container Preview Row */
   --folderpreview-height: calc(var(--container-logo-size) + (var(--container-logo-mrgtopbottom) * 2) + (var(--folderpreview-brdr-width-topbottom) * 2));
