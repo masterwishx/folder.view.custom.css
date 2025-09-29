@@ -112,14 +112,14 @@
 /* Folder toggle open button */
 button.folder-dropdown {
   float: none;
-  color: var(--cscheme-foreline1);
+  color: var(--folder-button-text-c);
   border: none;
   background: var(--folder-button-background);
   background-size: var(--folder-button-background-size);
   transition: transform 0.3s ease, color 0.3s ease;
 }
 button.folder-dropdown:hover {
-  color: var(--white);
+  color: var(--folder-button-text-c-hov);
   background: var(--folder-button-background-hov);
   /* Scale the button on hover */
   transform: scale(var(--folder-button-size-hov));
