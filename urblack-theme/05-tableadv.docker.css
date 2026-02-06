@@ -4,11 +4,11 @@
 /* Width of the CPU/MEM Load column */
 #docker_containers th.load,
 #docker_containers td.advanced {
-  width: 80px;
+  width: 155px;
 }
 
 /* Hide header text for load and uptime columns */
-#docker_containers th.load,
+/* #docker_containers th.load, */
 #docker_containers th.five {
   font-size: 0;
 }
