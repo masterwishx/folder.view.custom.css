@@ -112,7 +112,8 @@
 
 /* Inner box and main body of the context window */
 .preview-outbox {
-  padding: 8px;
+  padding: 5px;
+  min-height: 430px;
   color: var(--advc-tooltip-text-c);
   background-color: var(--advc-tooltip-bg-c);
 }
