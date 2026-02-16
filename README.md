@@ -33,12 +33,13 @@ Icons are fully customizable (design, color, and size) via custom properties (va
 _See the individual theme README files for more information on that theme._
 
 ### Dashboard
+
 <img width="713" height="1189" alt="image" src="https://github.com/user-attachments/assets/cfa14045-2e06-4821-be85-46a4e2bb984c" />
 
 ### Docker Page
+
 <img width="2418" height="891" alt="image" src="https://github.com/user-attachments/assets/be2e6052-e9b9-4a3e-b551-5fdf3a54cc69" />
 
-### VM Page 
+### VM Page
+
 <img width="2416" height="377" alt="image" src="https://github.com/user-attachments/assets/52ed393f-8b28-4720-a095-26a90fe2ea99" />
-
-
