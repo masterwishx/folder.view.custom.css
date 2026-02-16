@@ -1,22 +1,22 @@
-# Folder.View Custom CSS Files
+# Folder.View3 Custom CSS Files
 
 ------------
 
-_The original FolderView project was abandoned. A new fork has taken its place and is under development here: **[Folder.View2](https://github.com/VladoPortos/folder.view2)**_
-
-_I have yet to fully test the custom CSS here with the new Folder.View2 plugin._
+_The original FolderView and forked FolderView2 projects was abandoned. A new fork has taken its place and is under development here: **[Folder.View3](https://github.com/chodeus/folder.view3)**_
 
 ------------
+## Info
+_This is my personal fork of the awesome CSS by **[Mattaton](https://github.com/Tyree/folder.view.custom.css)**, tweaked and updated for my own use._
 
-_These themes do not currently include styling for VM panel on Dashboard or VM Page._
+_Black theme currently include styling for VM panel on Dashboard and VM Page._
 
 Custom CSS styles for use with the **[Folder.View](https://github.com/scolcipitato/folder.view/tree/main)** plugin for **unRAID** by **scolcipitato.**
 
 Thanks to scolcipitato for the great plugin! If you have a lot of docker containers, **Folder.View** is a must-have!
 
-Folder.View plugin **[Support Page](https://forums.unraid.net/topic/142782-plugin-folderview/)** on the unRAID forum.
+Folder.View3 plugin **[Support Page](https://forums.unraid.net/topic/197223-plugin-folderview3/)** on the unRAID forum.
 
-If you have issues or customization suggestions, contact me on the unRAID forum. **[@Mattaton](https://forums.unraid.net/profile/95289-mattaton/)**
+If you have issues or customization suggestions, contact me on the unRAID forum. **[@masterwishx](https://forums.unraid.net/profile/107418-masterwishx/)**
 
 ## Installation Instructions:
 

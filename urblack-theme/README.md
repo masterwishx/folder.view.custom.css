@@ -1,6 +1,6 @@
 # unRAID Black Theme
 
-_Use of this theme requires FolderView version **2023.10.04**_
+_Use of this theme requires FolderView3 version **2026.02.16**_
 
 Based on color and style from the out-of-box **Black** theme in **unRAID**.
 Dashboard and Docker table have been fully themed with easy-to-access variables that even those with limited CSS skills can edit and tweak.
