@@ -2,65 +2,65 @@
 /* BASICS */
 /*************************************************/
 /* Apply border-box to all elements inside the docker table */
-#docker_containers,
-#docker_containers * {
+#kvm_table,
+#kvm_table * {
   box-sizing: border-box;
 }
 
 /* Table row colors */
-#docker_containers.tablesorter {
+#kvm_table.tablesorter {
   background-color: var(--row-base-bg-c);
 }
-#docker_containers.tablesorter tbody tr:nth-child(even) {
+#kvm_table.tablesorter tbody tr:nth-child(even) {
   background-color: var(--row-even-bg-c);
 }
 
 /* Style all links that are not container tools */
-#docker_containers :not(.folder-element-custom-btn) > a,
-#docker_containers :not(.folder-element-custom-btn) > a:link,
-#docker_containers :not(.folder-element-custom-btn) > a:visited {
+#kvm_table :not(.folder-element-custom-btn) > a,
+#kvm_table :not(.folder-element-custom-btn) > a:link,
+#kvm_table :not(.folder-element-custom-btn) > a:visited {
   color: var(--cscheme-link);
   text-decoration: none;
 }
-#docker_containers :not(.folder-element-custom-btn) > a:hover {
+#kvm_table :not(.folder-element-custom-btn) > a:hover {
   color: var(--cscheme-linkhov);
   text-decoration: none;
 }
 
 /* Style all container names with updates available */
-#docker_containers :not(.folder-element-custom-btn) > a.orange-text,
-#docker_containers :not(.folder-element-custom-btn) > a.orange-text:link,
-#docker_containers :not(.folder-element-custom-btn) > a.orange-text:visited {
+#kvm_table :not(.folder-element-custom-btn) > a.orange-text,
+#kvm_table :not(.folder-element-custom-btn) > a.orange-text:link,
+#kvm_table :not(.folder-element-custom-btn) > a.orange-text:visited {
   color: var(--container-name-update-text-c);
   text-decoration: none;
   font-weight: bold;
 }
-#docker_containers :not(.folder-element-custom-btn) > a.orange-text:hover {
+#kvm_table :not(.folder-element-custom-btn) > a.orange-text:hover {
   color: var(--container-name-update-texthov-c);
   text-decoration: none;
   font-weight: bold;
 }
 
 /* Warning and Passed Text */
-#docker_containers .orange-text,
-#docker_containers .warning {
+#kvm_table .orange-text,
+#kvm_table .warning {
   color: var(--warn-orange-text-c);
 }
-#docker_containers .green,
-#docker_containers .green-text,
-#docker_containers .passed {
+#kvm_table .green,
+#kvm_table .green-text,
+#kvm_table .passed {
   color: var(--pass-green-text-c);
 }
-#docker_containers .blue-text {
+#kvm_table .blue-text {
   color: var(--accent-blue-text-c);
 }
 
 /* Autostart switches *//*
-#docker_containers .switch-button-background.checked,
+#kvm_table .switch-button-background.checked,
 .preview-status .switch-button-background.checked {
   background-color: var(--cscheme-interface-passed);
 }
-#docker_containers .switch-button-label.on,
+#kvm_table .switch-button-label.on,
 .preview-status .switch-button-label.on {
   color: var(--cscheme-interface-passed);
 }
@@ -211,30 +211,29 @@ button.folder-dropdown:active {
 
 /****** Give more space for containers *******/
 /* Autostart column */
-#docker_containers th.nine {
+#kvm_table th.nine {
   width: 0px; /*110px;*/
   padding: 0;
 }
-
 
 /*************************************************/
 /* EXPANDED FOLDER AND NO FOLDER CONTAINER ROW */
 /*************************************************/
 /* Cell for container name */
-#docker_containers .folder-element .ct-name,
-#docker_containers .ct-name:not(.folder-name) {
+#kvm_table .folder-element .ct-name,
+#kvm_table .ct-name:not(.folder-name) {
   width: auto !important;
   padding: 8px 20px 8px var(--container-nofold-namebox-padding-left) !important;
 }
 
 /* Container name text */
-#docker_containers .inner:not(.folder-inner) .appname {
+#kvm_table .inner:not(.folder-inner) .appname {
   font-size: var(--container-name-text-size);
   font-weight: var(--container-name-text-weight);
 }
 
 /* Wait form on autostart containers */
-#docker_containers tr.sortable:not(.folder) td:nth-child(7) span:last-of-type {
+#kvm_table tr.sortable:not(.folder) td:nth-child(7) span:last-of-type {
   float: none !important;
   display: block;
   margin-left: 10px;
