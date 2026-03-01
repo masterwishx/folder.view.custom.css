@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+#kvm_table .folder-name,
+#kvm_table .folder-outer {
+  width: calc(var(--folderbox-width) + 100px);
+}
+
 /* Table row colors */
 #kvm_table.tablesorter {
   background-color: var(--row-base-bg-c);
@@ -86,6 +91,7 @@
   height: var(--folderbox-height);
   display: flex;
   align-items: center;
+  width: calc(var(--folderbox-width) + 120px);
 }
 .folder .folder-outer {
   display: block;
