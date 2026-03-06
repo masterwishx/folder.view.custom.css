@@ -40,7 +40,7 @@
   --advc-grapharea-tabs-default-bg-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent1);
   --advc-grapharea-tabs-defhover-bg-c: var(--cscheme-backfill1);
-  --advc-grapharea-tabs-acthover-bg-c: linear-gradient(180deg, var(--cscheme-accent1-dark) 0, var(--cscheme-accent1));
+  --advc-grapharea-tabs-acthover-bg-c: linear-gradient(180deg, var(--cscheme-accent1-dark), var(--cscheme-accent1));
   --advc-grapharea-tabs-default-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-defhover-brdr-c: var(--cscheme-accent1);
