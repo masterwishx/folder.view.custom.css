@@ -35,12 +35,12 @@
   /* Tabs along the top of the CPU/Mem Graph, Port Mappings, and Vol Mappings */
   --advc-grapharea-tabs-deftext-c: var(--cscheme-foreline2);
   --advc-grapharea-tabs-deftexthover-c: var(--cscheme-foreline1);
-  --advc-grapharea-tabs-activetext-c: var(--cscheme-foreline1);
-  --advc-grapharea-tabs-activetexthover-c: var(--cscheme-foreline1);
+  --advc-grapharea-tabs-activetext-c: var(--cscheme-foreline0);
+  --advc-grapharea-tabs-activetexthover-c: var(--cscheme-foreline0);
   --advc-grapharea-tabs-default-bg-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent1);
   --advc-grapharea-tabs-defhover-bg-c: var(--cscheme-backfill1);
-  --advc-grapharea-tabs-acthover-bg-c: var(--cscheme-accent1);
+  --advc-grapharea-tabs-acthover-bg-c: linear-gradient(180deg, var(--cscheme-accent1-dark) 0, var(--cscheme-accent1));
   --advc-grapharea-tabs-default-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-defhover-brdr-c: var(--cscheme-accent1);
@@ -53,8 +53,8 @@
   --advc-grapharea-brdr-c: var(--cscheme-backfill3);
 
   /* Streaming CPU/Mem Graph Lines */
-  --folder-view-graph-cpu: var(--cscheme-cpu);
-  --folder-view-graph-mem: var(--cscheme-mem);
+  --folder-view3-graph-cpu: var(--cscheme-cpu);
+  --folder-view3-graph-mem: var(--cscheme-mem);
 }
 /* END OF VARIABLES */
 /*************************************************/
