@@ -1,7 +1,7 @@
 /*************************************************/
 /* BASICS */
 /*************************************************/
-/* Apply border-box to all elements inside the docker table */
+/* Apply border-box to all elements inside the vm table */
 #kvm_table,
 #kvm_table * {
   box-sizing: border-box;
@@ -10,14 +10,6 @@
 #kvm_table .folder-name,
 #kvm_table .folder-outer {
   width: calc(var(--folderbox-width) + 100px);
-}
-
-/* Table row colors */
-#kvm_table.tablesorter {
-  background-color: var(--row-base-bg-c);
-}
-#kvm_table.tablesorter tbody tr:nth-child(even) {
-  background-color: var(--row-even-bg-c);
 }
 
 /* Style all links that are not container tools */
@@ -192,14 +184,14 @@ button.folder-dropdown:active {
   width: var(--container-logo-size);
   height: var(--container-logo-size);
   margin-right: 5px;
-  /* Desaturate docker container icons - Or as specified in vars */
+  /* Desaturate vm container icons - Or as specified in vars */
   filter: saturate(var(--container-logo-saturation));
   /* Add a transition for smooth scaling */
   transition: transform 0.3s ease;
 }
 /* Container image hover */
 .folder-preview-wrapper:hover .outer img.img {
-  /* Saturate docker container icons - Or as specified in vars */
+  /* Saturate vm container icons - Or as specified in vars */
   filter: saturate(var(--container-logo-saturation-hov));
   /* Scale the image on hover */
   transform: scale(var(--container-logo-size-hov));
