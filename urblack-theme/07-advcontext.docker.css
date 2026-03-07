@@ -35,7 +35,7 @@
   /* Tabs along the top of the CPU/Mem Graph, Port Mappings, and Vol Mappings */
   --advc-grapharea-tabs-deftext-c: var(--cscheme-foreline2);
   --advc-grapharea-tabs-deftexthover-c: var(--cscheme-foreline1);
-  --advc-grapharea-tabs-activetext-c: var(--cscheme-foreline0);
+  --advc-grapharea-tabs-activetext-c: var(--cscheme-backfill4);
   --advc-grapharea-tabs-activetexthover-c: var(--cscheme-foreline0);
   --advc-grapharea-tabs-default-bg-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent1);
@@ -63,6 +63,11 @@
 .tooltipster-docker-folder .preview-outbox,
 .tooltipster-docker-folder .preview-outbox * {
   box-sizing: border-box;
+}
+
+/* Removes the outer black frame around the tooltip */
+.tooltipster-docker-folder {
+  background-color: transparent !important;
 }
 
 /* Warning and Passed Text */
@@ -245,6 +250,12 @@
   border-color: var(--advc-grapharea-tabs-acthover-brdr-c);
   border-width: 1px 1px 0 1px;
 }
+
+/* Adds transition to text and background when switching tabs */
+.preview-outbox .ui-state-default a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 .preview-outbox .ui-state-default a,
 .preview-outbox .ui-state-default a:link,
 .preview-outbox .ui-state-default a:visited {
