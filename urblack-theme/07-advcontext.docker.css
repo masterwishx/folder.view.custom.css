@@ -16,7 +16,7 @@
   /* Top container name and stats areas */
   --advc-contname-area-brdr-rt-c: var(--cscheme-backfill4);
   --advc-contstat-area-bg-c: var(--cscheme-backfill3);
-  --advc-contstat-hdr-bg-c: var(--cscheme-backfill1);
+  --advc-contstat-area-hdr-bg-c: var(--cscheme-backfill1);
   --advc-contstat-cpumeter-bg-c: var(--cscheme-foreline2);
   --advc-contstat-cpumeter-text-c: var(--cscheme-accent1);
   --advc-contstat-cpumeter-meter-c: var(--cscheme-accent5);
@@ -37,6 +37,7 @@
   --advc-grapharea-tabs-deftexthover-c: var(--cscheme-foreline1);
   --advc-grapharea-tabs-activetext-c: var(--cscheme-backfill4);
   --advc-grapharea-tabs-activetexthover-c: var(--cscheme-foreline0);
+  --advc-grapharea-tabs-infotext-c:  var(--cscheme-foreline1-light);
   --advc-grapharea-tabs-default-bg-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent1);
   --advc-grapharea-tabs-defhover-bg-c: var(--cscheme-backfill1);
@@ -303,7 +304,7 @@
   /* height: 220px !important; */
   overflow: auto;
   padding: 8px;
-  color: var(--text-hover) !important;
+  color: var(--advc-grapharea-tabs-infotext-c) !important;
   border: 1px solid var(--advc-grapharea-brdr-c) !important;
   border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
   font-size: 1.5rem;

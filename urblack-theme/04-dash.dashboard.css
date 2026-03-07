@@ -194,7 +194,7 @@ the green arrow or red square shows on containers */
   width: var(--exfold-logo-size);
   height: var(--exfold-logo-size);
   /* Desaturate docker folder icons (Docker & VM) */
-  filter: saturate(var(--folder-logo-saturation));
+  filter: saturate(var(--exfold-logo-saturation));
 }
 
 #docker_view .folder-showcase-outer[expanded="true"] .outer.folder-docker:hover img.folder-img-docker,
