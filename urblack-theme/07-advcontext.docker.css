@@ -30,7 +30,7 @@
   /* Container ID and Repo Box */
   --advc-continfo-bg-c: var(--cscheme-backfill2);
   --advc-continfo-brdr-c: var(--cscheme-backfill3);
-  --advc-continfo-text-c: var(--cscheme-foreline2);
+  --advc-continfo-text-c: var(--cscheme-foreline1);
 
   /* Tabs along the top of the CPU/Mem Graph, Port Mappings, and Vol Mappings */
   --advc-grapharea-tabs-deftext-c: var(--cscheme-foreline2);
@@ -42,10 +42,10 @@
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent1);
   --advc-grapharea-tabs-defhover-bg-c: var(--cscheme-backfill1);
   --advc-grapharea-tabs-acthover-bg-c: linear-gradient(180deg, var(--cscheme-accent1-dark), var(--cscheme-accent1));
-  --advc-grapharea-tabs-default-brdr-c: var(--cscheme-backfill2);
+  --advc-grapharea-tabs-default-brdr-c: var(--cscheme-foreline4);
   --advc-grapharea-tabs-active-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-defhover-brdr-c: var(--cscheme-accent1);
-  --advc-grapharea-tabs-acthover-brdr-c: var(--cscheme-backfill2);
+  --advc-grapharea-tabs-acthover-brdr-c: var(--cscheme-accent1-dark);
   --advc-grapharea-tabs-cpu: var(--cscheme-accent4);
   --advc-grapharea-tabs-mem: var(--cscheme-accent6);
 
@@ -56,6 +56,9 @@
   /* Streaming CPU/Mem Graph Lines */
   --folder-view3-graph-cpu: var(--cscheme-cpu);
   --folder-view3-graph-mem: var(--cscheme-mem);
+
+  /* Tooltipster sidetip arrow border color */
+  --dynamix-tooltipster-sidetip-box-border-color: var(--advc-tooltip-brdr-accent-c);
 }
 /* END OF VARIABLES */
 /*************************************************/
@@ -248,7 +251,7 @@
 }
 .preview-outbox .ui-state-default.ui-state-active.ui-state-hover {
   background: var(--advc-grapharea-tabs-acthover-bg-c);
-  border-color: var(--advc-grapharea-tabs-acthover-brdr-c);
+  border-color: var(--advc-grapharea-tabs-activetext-c);
   border-width: 1px 1px 0 1px;
 }
 
