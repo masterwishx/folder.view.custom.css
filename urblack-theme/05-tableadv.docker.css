@@ -66,6 +66,15 @@
   border: 1px solid var(--cscheme-foreline4);
   border-radius: 5px;
   background-color: var(--cscheme-backfill4);
+  color: var(--cscheme-foreline1);
+}
+
+/* Container info columns */
+#docker_containers .folder-element .updatecolumn .advanced,
+#docker_containers .folder-element .docker_readmore,
+#docker_containers td > div[style*="white-space:nowrap"],
+#docker_containers span[id$="-wait"] {
+  color: var(--cscheme-foreline1-light);
 }
 
 /* Uptime column */
