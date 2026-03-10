@@ -102,7 +102,7 @@
 
 /* Outer box of the context window */
 .tooltipster-docker-folder.tooltipster-sidetip .tooltipster-box {
-  border: 2px solid var(--advc-tooltip-brdr-c) !important;
+  /* border: 2px solid var(--advc-tooltip-brdr-c) !important; */
   border-radius: 8px;
   box-shadow: 1px 1px 10px 3px var(--cscheme-backfill4);
 }
