@@ -16,7 +16,8 @@
   --fv3-row-alt-bg: var(--row-even-bg-c);
 
   /* Folder Name/Logo Area */
-  --folderbox-width: 180px; /* May need to be increased if --folder-name-text-size is too big */
+  --fv3-folder-name-width: 180px;
+  --folderbox-width: var(--fv3-folder-name-width); /* May need to be increased if --folder-name-text-size is too big */
   --folderbox-height: calc(var(--folder-logo-size) + (var(--folderbox-padding-topbottom) * 2) + (var(--folderbox-brdr-width-topbottom) * 2));
   --folderbox-padding-topbottom: 7px;
   --folderbox-padding-leftright: 7px;

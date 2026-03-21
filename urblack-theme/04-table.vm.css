@@ -69,8 +69,7 @@
   width: var(--folderbox-width);
 }
 /* Prevent folder icon from being clipped when scaled on hover */
-.folder .folder-name-sub,
-.folder .folder-outer {
+td.folder-name .folder-outer {
   overflow: visible;
 }
 /* Wrapper around folder icon, name, and toggle */
