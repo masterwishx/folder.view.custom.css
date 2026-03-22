@@ -100,6 +100,11 @@ the folders and containers to the same height of the icon */
 /* EXPANDED FOLDER WRAPPER STYLES */
 /*************************************************/
 
+/* Override layout defaults: allow full folder names without truncation */
+.fv3-folder-appname {
+  max-width: 100% !important;
+}
+
 /* Expanded folder outer wrapper styles */
 #docker_view .folder-showcase-outer[expanded="true"],
 #vm_view .folder-showcase-outer[expanded="true"] {
