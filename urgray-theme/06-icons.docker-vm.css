@@ -118,25 +118,35 @@
 /*************************************************/
 /* Container Icons */
 .outer:not(.folder-outer).autostart i.started:not(.fa-spin)::before {
-  content: var(--container-autostart-started-icon); /* Replace the green triangle with a different icon */
+  content: var(--container-autostart-started-icon);
   color: var(--container-autostart-started-icon-c);
 }
 .outer:not(.folder-outer).autostart i.stopped:not(.fa-spin)::before {
-  content: var(--container-autostart-stopped-icon); /* Replace the red square with a different icon */
+  content: var(--container-autostart-stopped-icon);
   color: var(--container-autostart-stopped-icon-c);
 }
+
+/* Container autostart Spin Icon - Started */
+.outer:not(.folder-outer).autostart i.started.fa-spin::before {
+  content: var(--container-spin-started-icon);
+  color: var(--container-autostart-started-icon-c);
+}
+/* Container autostart Spin Icon - Stopped */
+.outer:not(.folder-outer).autostart i.stopped.fa-spin::before {
+  content: var(--container-spin-stopped-icon);
+  color: var(--container-autostart-stopped-icon-c);
+}
+
 /* Folder Icons */
-/* Replace the folder's default ontainer status icon with an icon
-denoting presence of autostart containers */
 .folder.autostart-full .folder-outer i.folder-load-status::before {
   content: var(--folder-autostart-full-icon);
-  color: var(--folder-autostart-full-icon-c); /* Green color when all autostart containers are started */
+  color: var(--folder-autostart-full-icon-c);
 }
 .folder.autostart-partial .folder-outer i.folder-load-status::before {
   content: var(--folder-autostart-partial-icon);
-  color: var(--folder-autostart-partial-icon-c); /* Orange when some autostart containers are started */
+  color: var(--folder-autostart-partial-icon-c);
 }
 .folder.autostart-off .folder-outer i.folder-load-status::before {
   content: var(--folder-autostart-off-icon);
-  color: var(--folder-autostart-off-icon-c); /* Red when no autostart containers are started */
+  color: var(--folder-autostart-off-icon-c);
 }

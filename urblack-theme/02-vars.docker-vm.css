@@ -16,8 +16,9 @@
   --fv3-row-alt-bg: var(--row-even-bg-c);
 
   /* Folder Name/Logo Area */
-  --fv3-folder-name-width: 180px;
-  --folderbox-width: var(--fv3-folder-name-width); /* May need to be increased if --folder-name-text-size is too big */
+  --fv3-folder-name-min-width: 180px;
+  --fv3-folder-name-max-width: none;
+  --folderbox-width: var(--fv3-folder-name-min-width); /* May need to be increased if --folder-name-text-size is too big */
   --folderbox-height: calc(var(--folder-logo-size) + (var(--folderbox-padding-topbottom) * 2) + (var(--folderbox-brdr-width-topbottom) * 2));
   --folderbox-padding-topbottom: 7px;
   --folderbox-padding-leftright: 7px;
@@ -35,7 +36,7 @@
   --folder-name-text-weight: bold;
   --folder-startstop-text-size: 1.2rem; /* 0 to hide */
   --folder-startstop-text-mrgleft: 7px; /* 0 to hide */
-  
+
   --folder-button-size-hov: 1.08; /* Changes button size on hover - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
   --folder-button-size-act: 0.98; /* Changes button size on activation (when pressed) - Used in transform/scale rule - 1 is 100%, 1.2 is 120%, 2 is 200%, etc. */
   --folder-button-background: linear-gradient(90deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1)) 0 0 no-repeat, linear-gradient(90deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1-dark) 0, var(--cscheme-foreline1-dark)) 0 100% no-repeat, linear-gradient(0deg, var(--cscheme-foreline1) 0, var(--cscheme-foreline1)) 100% 100% no-repeat;

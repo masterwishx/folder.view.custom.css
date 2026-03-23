@@ -237,7 +237,7 @@
   background: var(--advc-grapharea-tabs-default-bg-c);
   border-color: var(--advc-grapharea-tabs-default-brdr-c);
   border-width: 1px 1px 0 1px;
-  
+
 }
 .preview-outbox .ui-state-default.ui-state-hover {
   background: var(--advc-grapharea-tabs-defhover-bg-c);
