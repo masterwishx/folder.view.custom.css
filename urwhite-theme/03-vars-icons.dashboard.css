@@ -1,3 +1,18 @@
+/*************************************************/
+/* VARIABLES FOR ICONS ON THE DASHBOARD -
+Change these settings to your preference */
+/*************************************************/
+/* See https://fontawesome.com/icons for icons.
+Find an icon you'd like to use, click on it and copy
+the unicode from the top right corner. Example: f144
+Paste this within the " " below to change the icon.
+Be sure to leave the \ at the beginning of the code
+as shown below.
+For colors - Use the variables in the color scheme file
+OR
+look up a hex color convertor online
+like https://htmlcolorcodes.com/color-picker/ */
+/*************************************************/
 :root {
   /* STARTED/STOPPED ICONS - See https://fontawesome.com/icons */
   --folder-started-icon: "\f04b"; /* Normal started icon - default is play triangle */

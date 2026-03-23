@@ -38,12 +38,12 @@ like https://htmlcolorcodes.com/color-picker/ */
   --cscheme-interface-passed2: #4caf50;
   --cscheme-interface-accent: #2cabe3;
 
-  --cscheme-link: #486dba;
-  --cscheme-linkhov: #2cabe3;
-  --cscheme-tool-link: #616161;
-  --cscheme-tool-linkhov: #2cabe3;
-  --cscheme-cont-update: #f0582c;
-  --cscheme-cont-updatehov: #ff792e;
-  --cscheme-folder-update: #3e6dba;
-  --cscheme-exfolder-update: #f0582c;
+  --cscheme-link: #486dba; /* Text links within the docker table */
+  --cscheme-linkhov: #2cabe3; /* Text links - hover */
+  --cscheme-tool-link: #616161; /* Container tools - WebUI, Console, Logs */
+  --cscheme-tool-linkhov: #2cabe3; /* Container tools - hover */
+  --cscheme-cont-update: #f0582c; /* Container with update */
+  --cscheme-cont-updatehov: #ff792e; /* Container with update - hover (only in docker table) */
+  --cscheme-folder-update: #3e6dba; /* Folder on dashboard with update within */
+  --cscheme-exfolder-update: #f0582c; /* Expanded folder on dashboard with update within */
 }
