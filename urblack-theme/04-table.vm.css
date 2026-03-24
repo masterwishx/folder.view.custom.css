@@ -163,9 +163,20 @@ button.folder-dropdown:active {
 /* Vertical lines between containers - if enabled */
 .folder-preview .folder-preview-divider {
   float: none;
-  height: var(--container-logo-size);
-  margin: var(--container-logo-mrgtopbottom) 5px var(--container-logo-mrgtopbottom) 10px;
+  height: 70%;
+  margin: 0 5px 0 10px;
+  align-self: center;
   border: 1px solid var(--folderpreview-brdr-c) !important;
+}
+.folder-preview.fv3-overflow-scroll .folder-preview-divider:not(:last-child) {
+  height: auto;
+  align-self: stretch;
+  margin-top: var(--container-logo-mrgtopbottom);
+}
+.folder-preview.fv3-overflow-expand .folder-preview-divider:not(:last-child) {
+  height: var(--container-logo-size);
+  margin-top: var(--container-logo-mrgtopbottom);
+  align-self: flex-start;
 }
 
 /*************************************************/
