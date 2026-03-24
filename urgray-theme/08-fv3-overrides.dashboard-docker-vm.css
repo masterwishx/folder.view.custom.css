@@ -15,7 +15,7 @@
 
   /* Dashboard: Inset layout */
   --fv3-inset-border-color: var(--cscheme-foreline3);
-  --fv3-inset-fill: rgba(18, 21, 16, 0.6);
+  --fv3-inset-fill: var(--cscheme-foreline4);
   --fv3-inset-showcase-border: var(--cscheme-foreline4);
   --fv3-inset-showcase-fill: rgba(27, 29, 27, 0.4);
   --fv3-inset-bg: transparent;

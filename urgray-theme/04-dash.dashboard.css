@@ -68,7 +68,8 @@
 .fv3-layout-classic .hand {
   position: absolute;
   z-index: 50;
-  display: inline-block;
+  display: flex !important;
+  align-items: center !important;
   left: 0;
   right: 0;
   top: 0;
@@ -80,20 +81,28 @@
 the folders and containers to the same height of the icon (classic only) */
 .fv3-layout-classic .inner {
   display: inline-block;
-  height: var(--container-logo-size);
+  min-height: var(--container-logo-size);
   margin-left: calc(var(--container-logo-size) + 6px);
 }
 
 /* Compressed folder wrapper and docker container wrapper styles (classic only) */
-.fv3-layout-classic .outer {
+#docker_view .fv3-layout-classic .outer,
+#vm_view .fv3-layout-classic .outer {
   position: relative;
-  display: inline-block;
 }
 
-/* Transparent background for all dashboard tiles */
+/* Transparent background and vertical icon centering for all dashboard tiles */
 #docker_view .outer,
 #vm_view .outer {
   background-color: transparent;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Restore block display for expanded folder headers (all layouts) */
+.folder-showcase-outer[expanded="true"] .outer.folder-docker,
+.folder-showcase-outer[expanded="true"] .outer.folder-vm {
+  display: block !important;
 }
 
 
@@ -184,7 +193,7 @@ the green arrow or red square shows on containers */
 /* Expanded folder wrapper/header styles (classic layout only) */
 #docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .outer.folder-docker,
 #vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .outer.folder-vm {
-  display: block;
+  display: block !important;
   float: none;
   padding: 8px;
   border: 1px solid var(--exfold-header-brdr-c);
@@ -216,6 +225,11 @@ height of the icon - builds on compressed styles */
 #docker_view .folder-showcase-outer[expanded="true"] .inner.folder-inner-docker,
 #vm_view .folder-showcase-outer[expanded="true"] .inner.folder-inner-vm {
   height: var(--exfold-logo-size);
+}
+
+/* Classic layout: offset text for absolutely-positioned icon */
+#docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .inner.folder-inner-docker,
+#vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .inner.folder-inner-vm {
   margin-left: calc(var(--exfold-logo-size) + 7px);
 }
 

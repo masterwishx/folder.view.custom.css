@@ -88,9 +88,11 @@ td.folder-name .folder-outer {
   height: var(--folderbox-height);
   display: flex;
   align-items: center;
-  overflow: visible;
+  overflow: hidden;
 }
-.folder .folder-outer {
+.outer.folder-outer {
+  display: inline-flex !important;
+  align-items: center !important;
   margin-bottom: 0;
 }
 /* Folder image */
@@ -215,7 +217,9 @@ button.folder-dropdown:active {
 /*************************************************/
 .folder .folder-preview.fv3-overflow-expand {
   height: auto;
+  min-height: var(--folderpreview-height);
   max-height: none;
+  padding-bottom: var(--container-logo-mrgtopbottom);
 }
 .folder:has(.folder-preview.fv3-overflow-expand) .folder-name-sub {
   height: 100%;
