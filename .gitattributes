@@ -1,0 +1,31 @@
+# Default: force LF for all text files
+* text=auto eol=lf
+
+# Common web/dev file types
+*.css   text eol=lf
+*.js    text eol=lf
+*.html  text eol=lf
+*.htm   text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.xml   text eol=lf
+*.sh    text eol=lf
+*.conf  text eol=lf
+
+# Windows-only files (keep CRLF if needed)
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binary files (never modify line endings)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.svg   binary
+*.ico   binary
+*.zip   binary
+*.gz    binary
+*.7z    binary
+*.pdf   binary
