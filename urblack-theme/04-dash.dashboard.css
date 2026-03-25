@@ -57,20 +57,19 @@
 }
 
 /* Add a padding left to the entire docker and vm icon area
-- this compensates for the expanded folder header */
-#docker_view tr:nth-child(2) td,
-#vm_view tr:nth-child(2) td {
+- this compensates for the expanded folder header (classic only) */
+#docker_view tr:nth-child(2) td.fv3-layout-classic,
+#vm_view tr:nth-child(2) td.fv3-layout-classic {
   padding-left: 20px;
   padding-bottom: 10px;
 }
 
-/* Expand the clickable area of folders and containers
-to the full width of the wrapper */
-#docker_view .hand,
-#vm_view .hand {
+/* Expand the clickable area of folders and containers (classic only) */
+.fv3-layout-classic .hand {
   position: absolute;
   z-index: 50;
-  display: inline-block;
+  display: flex !important;
+  align-items: center !important;
   left: 0;
   right: 0;
   top: 0;
@@ -78,21 +77,32 @@ to the full width of the wrapper */
   padding: 0;
 }
 
-/* Set a height on the name/text area of
-the folders and containers to the same height of the icon */
-#docker_view .inner,
-#vm_view .inner {
+/* Set a min-height on the name/text area of
+the folders and containers to the same height of the icon (classic only) */
+.fv3-layout-classic .inner {
   display: inline-block;
-  height: var(--container-logo-size);
+  min-height: var(--container-logo-size);
   margin-left: calc(var(--container-logo-size) + 6px);
 }
 
-/* Compressed folder wrapper and docker container wrapper styles */
+/* Compressed folder wrapper and docker container wrapper styles (classic only) */
+#docker_view .fv3-layout-classic .outer,
+#vm_view .fv3-layout-classic .outer {
+  position: relative;
+}
+
+/* Transparent background and vertical icon centering for all dashboard tiles */
 #docker_view .outer,
 #vm_view .outer {
-  position: relative; /* Needed for absolute positioning of child elements */
-  display: inline-block;
   background-color: transparent;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Restore block display for expanded folder headers (all layouts) */
+.folder-showcase-outer[expanded="true"] .outer.folder-docker,
+.folder-showcase-outer[expanded="true"] .outer.folder-vm {
+  display: block !important;
 }
 
 
@@ -100,19 +110,21 @@ the folders and containers to the same height of the icon */
 /* EXPANDED FOLDER WRAPPER STYLES */
 /*************************************************/
 
-/* Override layout defaults: allow full folder names without truncation */
-.fv3-folder-appname {
-  max-width: 100% !important;
+/* Allow full folder names on expanded folders (classic only — other layouts use FV3 truncation) */
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] .fv3-folder-appname {
+  max-width: none;
+  overflow: visible;
+  white-space: nowrap;
 }
 
-/* Expanded folder outer wrapper styles */
-#docker_view .folder-showcase-outer[expanded="true"],
-#vm_view .folder-showcase-outer[expanded="true"] {
+/* Expanded folder outer wrapper styles (classic layout only — other layouts keep FV3 structure) */
+#docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"],
+#vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"],
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] {
   float: left;
   display: block;
-  margin-left: -10px; /* Overcome 20px container padding-left by giving
-                      expanded folder a negative left margin */
-  width: calc(100% + 10px); /* Add 10px to the width to overcome negative margin */
+  margin-left: -10px;
+  width: calc(100% + 10px);
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
@@ -120,14 +132,12 @@ the folders and containers to the same height of the icon */
   background-color: var(--exfold-drawer-bg-c);
 }
 
-#docker_view .folder-showcase-outer[expanded="true"]:not(:last-child),
-#vm_view .folder-showcase-outer[expanded="true"]:not(:last-child) {
-  margin-bottom: 20px; /* Only apply 20px margin if it's NOT the last element */
+.fv3-layout-classic .folder-showcase-outer[expanded="true"]:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /* Child docker container icons wrapper "drawer" styles */
-#docker_view .folder-showcase-outer[expanded="true"] .folder-showcase,
-#vm_view .folder-showcase-outer[expanded="true"] .folder-showcase {
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] .folder-showcase {
   float: left;
   display: block;
   padding: 0 20px;
@@ -174,16 +184,16 @@ the green arrow or red square shows on containers */
 /* EXPANDED FOLDER HEADER STYLES */
 /*************************************************/
 
-/* Add padding to the clickable area - builds on compressed styles */
-#docker_view .folder-showcase-outer[expanded="true"] .hand.folder-hand-docker,
-#vm_view .folder-showcase-outer[expanded="true"] .hand.folder-hand-vm {
+/* Add padding to the clickable area - classic layout only */
+#docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .hand.folder-hand-docker,
+#vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .hand.folder-hand-vm {
   padding: 8px;
 }
 
-/* Expanded folder wrapper/header styles */
-#docker_view .folder-showcase-outer[expanded="true"] .outer.folder-docker,
-#vm_view .folder-showcase-outer[expanded="true"] .outer.folder-vm {
-  display: block;
+/* Expanded folder wrapper/header styles (classic layout only) */
+#docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .outer.folder-docker,
+#vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .outer.folder-vm {
+  display: block !important;
   float: none;
   padding: 8px;
   border: 1px solid var(--exfold-header-brdr-c);
@@ -215,6 +225,11 @@ height of the icon - builds on compressed styles */
 #docker_view .folder-showcase-outer[expanded="true"] .inner.folder-inner-docker,
 #vm_view .folder-showcase-outer[expanded="true"] .inner.folder-inner-vm {
   height: var(--exfold-logo-size);
+}
+
+/* Classic layout: offset text for absolutely-positioned icon */
+#docker_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .inner.folder-inner-docker,
+#vm_view .fv3-layout-classic .folder-showcase-outer[expanded="true"] .inner.folder-inner-vm {
   margin-left: calc(var(--exfold-logo-size) + 7px);
 }
 
@@ -239,9 +254,9 @@ height of the icon - builds on compressed styles */
   color: var(--exfold-contname-text-c);
 }
 
-/* Down arrow icon */
-#docker_view .folder-showcase-outer[expanded="true"] .folder-docker::after,
-#vm_view .folder-showcase-outer[expanded="true"] .folder-vm::after {
+/* Down arrow icon (classic layout only, hidden when collapse toggle is active) */
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] .folder-docker::after,
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] .folder-vm::after {
   position: absolute;
   content: "\f0d7";
   display: block;
@@ -250,4 +265,6 @@ height of the icon - builds on compressed styles */
   right: 1rem;
   bottom: 0;
 }
-/*************************************************/
+.fv3-layout-classic .folder-showcase-outer[expanded="true"] .fv3-expanded-tab::after {
+  content: none;
+}
