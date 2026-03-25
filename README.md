@@ -25,7 +25,7 @@ Folder.View3 plugin **[Support Page](https://forums.unraid.net/topic/197223-plug
 - **[scolcipitato](https://github.com/scolcipitato/folder.view)** — creator of the original Folder.View plugin  
 - **[chodeus](https://github.com/chodeus/folder.view3)** — developer and maintainer of Folder.View3  
 - **[Mattaton](https://github.com/Tyree/folder.view.custom.css)** — author of the original custom CSS  
-- **[hernandito](https://github.com/hernandito/unRAID-Docker-Folder-Animated-Icons---Alternate-Colors)** — visual style and creator of the Animated “Docker‑Folder” Icons for unRAID  
+- **[hernandito](https://github.com/hernandito/unRAID-Docker-Folder-Animated-Icons---Alternate-Colors)** — visual style and CSS inspiration, creator of the Animated “Docker‑Folder” Icons for unRAID  
 
 If you have issues or customization suggestions, contact me on the unRAID forum. **[@masterwishx](https://forums.unraid.net/profile/107418-masterwishx/)**
 
