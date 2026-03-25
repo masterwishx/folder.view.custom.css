@@ -69,11 +69,14 @@
 /* FOLDER NAME AREA */
 /*************************************************/
 .folder .folder-name {
-  width: var(--folderbox-width);
+  min-width: var(--fv3-folder-name-min-width);
+  max-width: var(--fv3-folder-name-max-width);
 }
 /* Prevent folder icon from being clipped when scaled on hover */
 td.folder-name .folder-outer {
   overflow: visible;
+  white-space: nowrap;
+  width: auto;
 }
 /* Wrapper around folder icon, name, and toggle */
 .folder .folder-name-sub {
@@ -85,12 +88,12 @@ td.folder-name .folder-outer {
   height: var(--folderbox-height);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
-.folder .folder-outer {
-  display: block;
-  height: var(--folder-logo-size);
+.outer.folder-outer {
+  display: inline-flex !important;
+  align-items: center !important;
   margin-bottom: 0;
-  width: calc(var(--folderbox-width) - 25px);
 }
 /* Folder image */
 .folder-outer img.img {
@@ -116,6 +119,7 @@ td.folder-name .folder-outer {
 /* Folder toggle open button */
 button.folder-dropdown {
   float: none;
+  margin-left: auto;
   color: var(--folder-button-text-c);
   border: none;
   background: var(--folder-button-background);
@@ -165,9 +169,20 @@ button.folder-dropdown:active {
 /* Vertical lines between containers - if enabled */
 .folder-preview .folder-preview-divider {
   float: none;
-  height: var(--container-logo-size);
-  margin: var(--container-logo-mrgtopbottom) 5px var(--container-logo-mrgtopbottom) 10px;
+  height: 70%;
+  margin: 0 5px 0 10px;
+  align-self: center;
   border: 1px solid var(--folderpreview-brdr-c) !important;
+}
+.folder-preview.fv3-overflow-scroll .folder-preview-divider:not(:last-child) {
+  height: auto;
+  align-self: stretch;
+  margin-top: var(--container-logo-mrgtopbottom);
+}
+.folder-preview.fv3-overflow-expand .folder-preview-divider:not(:last-child) {
+  height: var(--container-logo-size);
+  margin-top: var(--container-logo-mrgtopbottom);
+  align-self: flex-start;
 }
 
 /*************************************************/
@@ -206,6 +221,42 @@ button.folder-dropdown:active {
 .outer:not(.folder-outer) .state {
   font-size: var(--container-startstop-text-size);
   margin-left: var(--container-startstop-text-mrgleft);
+}
+
+/*************************************************/
+/* EXPANDED / SCROLL PREVIEW MODES */
+/*************************************************/
+.folder .folder-preview.fv3-overflow-expand {
+  height: auto;
+  min-height: var(--folderpreview-height);
+  max-height: none;
+  padding-bottom: var(--container-logo-mrgtopbottom);
+}
+.folder:has(.folder-preview.fv3-overflow-expand) .folder-name-sub {
+  height: 100%;
+}
+.folder .folder-preview.fv3-overflow-scroll {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.folder-preview.fv3-overflow-scroll .folder-preview-wrapper {
+  flex-shrink: 0;
+}
+.folder-preview.fv3-overflow-scroll::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+.folder-preview.fv3-overflow-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+.folder-preview.fv3-overflow-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 47, 0.5);
+}
+.folder .folder-preview.expanded {
+  height: auto;
+  max-height: none;
 }
 
 /****** Give more space for containers *******/

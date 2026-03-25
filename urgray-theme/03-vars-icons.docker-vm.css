@@ -1,0 +1,65 @@
+/*************************************************/
+/* VARIABLES FOR ICONS IN DOCKER/VM TABLE -
+Change these settings to your preference */
+/*************************************************/
+/* See https://fontawesome.com/icons for icons.
+Find an icon you'd like to use, click on it and copy
+the unicode from the top right corner. Example: f144
+Paste this within the " " below to change the icon.
+Be sure to leave the \ at the beginning of the code
+as shown below.
+For colors - Use the variables in the color scheme file
+OR
+look up a hex color convertor online
+like https://htmlcolorcodes.com/color-picker/ */
+/*************************************************/
+:root {
+  /* STARTED/STOPPED ICONS - See https://fontawesome.com/icons */
+  --folder-started-icon: "\f04b";
+  --folder-stopped-icon: "\f04d";
+  --folder-autostart-full-icon: "\f144";
+  --folder-autostart-partial-icon: "\f144";
+  --folder-autostart-off-icon: "\f144";
+  --folder-spin-started-icon: "\f110";
+  --folder-spin-stopped-icon: "\f110";
+
+  --container-started-icon: "\f04b";
+  --container-stopped-icon: "\f04d";
+  --container-autostart-started-icon: "\f144";
+  --container-autostart-stopped-icon: "\f28d";
+  --container-spin-started-icon: "\f110";
+  --container-spin-stopped-icon: "\f110";
+
+  /* STARTED/STOPPED ICON COLORS */
+  --folder-started-icon-c: var(--cscheme-interface-passed);
+  --folder-stopped-icon-c: var(--cscheme-interface-alert);
+  --folder-autostart-full-icon-c: var(--cscheme-interface-passed2);
+  --folder-autostart-partial-icon-c: var(--cscheme-interface-warn2);
+  --folder-autostart-off-icon-c: var(--cscheme-interface-alert2);
+  --folder-spin-started-icon-c: var(--cscheme-interface-warn);
+  --folder-spin-stopped-icon-c: var(--cscheme-interface-attention);
+
+  --container-spin-started-icon-c: var(--cscheme-interface-passed);
+  --container-spin-stopped-icon-c: var(--cscheme-interface-alert);
+  --container-started-icon-c: var(--cscheme-interface-passed);
+  --container-stopped-icon-c: var(--cscheme-interface-alert);
+  --container-autostart-started-icon-c: var(--cscheme-interface-passed2);
+  --container-autostart-stopped-icon-c: var(--cscheme-interface-alert2);
+
+  /* STARTED/STOPPED ICON SIZES */
+  --folder-status-size: 16px;
+  --container-status-size: 15px;
+  --container-autostart-status-size: 16px;
+
+  /* CONTAINER TOOL ICONS - WEBUI, CONSOLE, LOGS */
+  --container-tools-size: 14px;
+  --container-webui-icon: "\f0ac";
+  --container-webui-icon-c: var(--cscheme-tool-link);
+  --container-webui-iconhover-c: var(--cscheme-tool-linkhov);
+  --container-console-icon: "\f120";
+  --container-console-icon-c: var(--cscheme-tool-link);
+  --container-console-iconhover-c: var(--cscheme-tool-linkhov);
+  --container-logs-icon: "\f0c9";
+  --container-logs-icon-c: var(--cscheme-tool-link);
+  --container-logs-iconhover-c: var(--cscheme-tool-linkhov);
+}

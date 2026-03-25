@@ -21,6 +21,7 @@ File naming determines load order. _Do not change the naming of these files unle
 - **06-icons.dashboard.css:** _Selectors and rules specific to icons on the dashboard._
 - **06-icons.docker-vm.css:** _Selectors and rules specific to icons on the docker/vm page._
 - **07-advcontext.docker.css:** _Variables, selectors, and rules specific to the Advanced Context Menu._
+- **08-fv3-overrides.dashboard-docker-vm.css:** _Overrides for FolderView3 built-in CSS variables and layout._
 
 ## Sample Images
 

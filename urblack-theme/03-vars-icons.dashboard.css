@@ -1,5 +1,5 @@
 /*************************************************/
-/* VARIABLES FOR ICONS ON THE DASHBOARD - 
+/* VARIABLES FOR ICONS ON THE DASHBOARD -
 Change these settings to your preference */
 /*************************************************/
 /* See https://fontawesome.com/icons for icons.
@@ -38,7 +38,7 @@ like https://htmlcolorcodes.com/color-picker/ */
   --folder-stopped-icon-c: var(--cscheme-interface-alert); /* Normal stopped icon - default is red */
   --folder-autostart-full-icon-c: var(--cscheme-interface-passed2); /* Indicate ALL autostart containers within the folder are started */
   --folder-autostart-partial-icon-c: var(--cscheme-interface-warn2); /* Indicates SOME autostart containers within the folder are started */
-  --folder-autostart-off-icon-c: var(--cscheme-interface-alert2); /* Indicates NO autostart containers within the folder are started */  
+  --folder-autostart-off-icon-c: var(--cscheme-interface-alert2); /* Indicates NO autostart containers within the folder are started */
 
   --container-spin-started-icon-c: var(--cscheme-interface-passed); /* Spin icon temporarily shown when a container is changing from started to stopped */
   --container-spin-stopped-icon-c: var(--cscheme-interface-alert); /* Spin icon temporarily shown when a container is changing from stopped to started */
