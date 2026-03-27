@@ -169,8 +169,8 @@ button.folder-dropdown:active {
 /* Vertical lines between containers - if enabled */
 .folder-preview .folder-preview-divider {
   float: none;
-  height: 70%;
-  margin: 0 5px 0 10px;
+  height: var(--container-logo-size);
+  margin: var(--container-logo-mrgtopbottom) 5px var(--container-logo-mrgtopbottom) 10px !important;
   align-self: center;
   border: 1px solid var(--folderpreview-brdr-c) !important;
 }
