@@ -164,7 +164,7 @@ button.folder-dropdown:active {
 .folder-preview .folder-preview-divider {
   float: none;
   height: var(--container-logo-size);
-  margin: var(--container-logo-mrgtopbottom) 5px var(--container-logo-mrgtopbottom) 10px !important;
+  margin: var(--container-logo-mrgtopbottom) var(--container-divider-mrgright) var(--container-logo-mrgtopbottom) var(--container-divider-mrgleft) !important;
   align-self: center;
   border: 1px solid var(--folderpreview-brdr-c) !important;
 }
@@ -193,7 +193,7 @@ button.folder-dropdown:active {
 .folder-preview-wrapper .outer img.img {
   width: var(--container-logo-size);
   height: var(--container-logo-size);
-  margin-right: 5px;
+  margin-right: var(--container-logo-mrgright);
   /* Desaturate vm container icons - Or as specified in vars */
   filter: saturate(var(--container-logo-saturation));
   /* Add a transition for smooth scaling */

@@ -59,6 +59,9 @@
   --container-logo-saturation-hov: 1; /* 1 is 100% or default color depth - Values above 1 will saturate beyond default colors, Example: 4 = 400% */
   --container-logo-mrgtopbottom: 10px;
   --container-logo-mrgleft: 10px;
+  --container-logo-mrgright: 10px;
+  --container-divider-mrgleft: 10px;
+  --container-divider-mrgright: 0;
   --container-name-text-size: 1.3rem;
   --container-name-text-weight: bold;
   --container-name-update-text-c: var(--cscheme-cont-update);
