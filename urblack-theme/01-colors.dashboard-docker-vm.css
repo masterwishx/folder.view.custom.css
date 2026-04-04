@@ -6,7 +6,6 @@ Change these settings to your preference */
 like https://htmlcolorcodes.com/color-picker/ */
 /*************************************************/
 :root {
-  
   --cscheme-accent1: #ff8c2f;
   --cscheme-accent1-dark: #f15a2c;
   --cscheme-accent2: #3e6dba;
@@ -26,8 +25,8 @@ like https://htmlcolorcodes.com/color-picker/ */
   --cscheme-backfill2: #212121;
   --cscheme-backfill3: #1c1b1b;
   --cscheme-backfill4: #191818;
-  --cscheme-cpu: #00BCD4; /*#26dac8;/*#2b8da3; /* CPU accent color Graph Line*/
-  --cscheme-mem: #673AB7; /*#6725d8;/*#5d6db6; /* Mem accent color Graph Line */
+  --cscheme-cpu: #00BCD4; /* CPU accent color Graph Line */
+  --cscheme-mem: #673AB7; /* Mem accent color Graph Line */
 
   --cscheme-interface-alert: #f0000c;
   --cscheme-interface-alert2: #fb039a;
@@ -45,7 +44,6 @@ like https://htmlcolorcodes.com/color-picker/ */
   --cscheme-tool-linkhov: #9E9E9E; /* Container tools - hover */
   --cscheme-cont-update: #ff8c2f; /* Container with update */
   --cscheme-cont-updatehov: #ffc04c; /* Container with update - hover (only in docker table) */
-  --cscheme-folder-update: #ff8c2f; /*#3e6dba; /* Folder on dashboard with update within */
+  --cscheme-folder-update: #ff8c2f; /* Folder on dashboard with update within */
   --cscheme-exfolder-update: #ff8c2f; /* Expanded folder on dashboard with update within */
-  
 }
