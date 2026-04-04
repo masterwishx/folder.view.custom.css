@@ -22,7 +22,7 @@
   --folderbox-height: calc(var(--folder-logo-size) + (var(--folderbox-padding-topbottom) * 2) + (var(--folderbox-brdr-width-topbottom) * 2));
   --folderbox-padding-topbottom: 7px;
   --folderbox-padding-leftright: 7px;
-  --folderbox-brdr-c: var(--cscheme-foreline1);
+  --folderbox-brdr-c: var(--cscheme-foreline3);
   --folderbox-brdr-width-topbottom: 1px;
   --folderbox-brdr-width-left: 8px;
   --folderbox-brdr-width-right: 8px;
