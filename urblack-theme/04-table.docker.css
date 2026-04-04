@@ -192,7 +192,7 @@ button.folder-dropdown:active {
 .folder-preview .folder-preview-wrapper {
   float: none;
   margin-left: var(--container-logo-mrgleft);
-  margin-top: 4px;
+  margin-top: var(--container-logo-mrgtopbottom);
   height: auto;
 }
 /* Container image */
