@@ -162,7 +162,8 @@ button.folder-dropdown:active {
   border-style: solid !important;
   border-color: var(--folderpreview-brdr-c) !important;
   border-width: var(--folderpreview-brdr-width-topbottom) var(--folderpreview-brdr-width-right) var(--folderpreview-brdr-width-topbottom) var(--folderpreview-brdr-width-left) !important;
-  height: var(--folderpreview-height);
+  height: 100%;
+  min-height: var(--folderpreview-height);
   align-items: center;
 }
 
