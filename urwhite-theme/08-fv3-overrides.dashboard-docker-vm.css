@@ -28,6 +28,9 @@
   --fv3-embossed-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   --fv3-embossed-inner-border: var(--cscheme-foreline3);
   --fv3-embossed-inner-bg: rgba(0, 0, 0, 0.03);
+
+  /* Docker Controls */
+  --fv3-chevron-size: 11px;
 }
 
 /*************************************************/

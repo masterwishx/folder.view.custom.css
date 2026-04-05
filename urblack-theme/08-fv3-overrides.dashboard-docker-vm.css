@@ -28,6 +28,9 @@
   --fv3-embossed-shadow: none;
   --fv3-embossed-inner-border: var(--cscheme-foreline4);
   --fv3-embossed-inner-bg: rgba(255, 255, 255, 0.03);
+
+  /* Docker Controls */
+  --fv3-chevron-size: 11px;
 }
 
 /*************************************************/
@@ -94,13 +97,11 @@ button.fv3-collapse-toggle:active {
   overflow: visible;
 }
 
-
 .fv3-fullwidth-panel {
   border-color: var(--cscheme-foreline4);
   border-left-color: var(--cscheme-accent1);
   padding: 12px;
 }
-
 
 .fv3-layout-inset .folder-showcase:not(:empty) {
   padding: 12px;
