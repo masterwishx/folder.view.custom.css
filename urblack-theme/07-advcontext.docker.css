@@ -237,7 +237,6 @@
   background: var(--advc-grapharea-tabs-default-bg-c);
   border-color: var(--advc-grapharea-tabs-default-brdr-c);
   border-width: 1px 1px 0 1px;
-  
 }
 .preview-outbox .ui-state-default.ui-state-hover {
   background: var(--advc-grapharea-tabs-defhover-bg-c);
@@ -299,6 +298,11 @@
   /* height: 220px !important; */
   padding: 2px;
   border: 1px solid var(--advc-grapharea-brdr-c);
+}
+
+/* Graph Canvas Responsiveness */
+.comb-stat-graph, .cpu-stat-graph, .mem-stat-graph {
+  border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
 }
 
 /* Port Mappings and Volume Mappings areas */

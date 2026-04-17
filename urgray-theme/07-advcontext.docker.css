@@ -16,7 +16,7 @@
   /* Top container name and stats areas */
   --advc-contname-area-brdr-rt-c: var(--cscheme-backfill4);
   --advc-contstat-area-bg-c: var(--cscheme-backfill3);
-  --advc-contstat-hdr-bg-c: var(--cscheme-backfill1);
+  --advc-contstat-area-hdr-bg-c: var(--cscheme-backfill1);
   --advc-contstat-cpumeter-bg-c: var(--cscheme-foreline2);
   --advc-contstat-cpumeter-text-c: var(--cscheme-accent1);
   --advc-contstat-cpumeter-meter-c: var(--cscheme-interface-passed);
@@ -37,22 +37,28 @@
   --advc-grapharea-tabs-deftexthover-c: var(--cscheme-foreline1);
   --advc-grapharea-tabs-activetext-c: var(--cscheme-foreline1);
   --advc-grapharea-tabs-activetexthover-c: var(--cscheme-foreline1);
+  --advc-grapharea-tabs-infotext-c:  var(--cscheme-foreline1-light);
   --advc-grapharea-tabs-default-bg-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-bg-c: var(--cscheme-accent2);
   --advc-grapharea-tabs-defhover-bg-c: var(--cscheme-backfill1);
-  --advc-grapharea-tabs-acthover-bg-c: var(--cscheme-accent2);
+  --advc-grapharea-tabs-acthover-bg-c: linear-gradient(180deg, var(--cscheme-accent1-dark), var(--cscheme-accent1));
   --advc-grapharea-tabs-default-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-active-brdr-c: var(--cscheme-backfill2);
   --advc-grapharea-tabs-defhover-brdr-c: var(--cscheme-accent2);
   --advc-grapharea-tabs-acthover-brdr-c: var(--cscheme-backfill2);
+  --advc-grapharea-tabs-cpu: var(--cscheme-accent4);
+  --advc-grapharea-tabs-mem: var(--cscheme-accent6);
 
   /* Top border for the Streaming CPU/Mem Graph Area */
-  --advc-grapharea-brdr-top-c: var(--cscheme-accent2);
+  --advc-grapharea-brdr-top-c: var(--cscheme-accent1);
   --advc-grapharea-brdr-c: var(--cscheme-backfill3);
 
   /* Streaming CPU/Mem Graph Lines */
-  --folder-view-graph-cpu: var(--cscheme-accent1);
-  --folder-view-graph-mem: var(--cscheme-accent2);
+  --folder-view3-graph-cpu: var(--cscheme-cpu);
+  --folder-view3-graph-mem: var(--cscheme-mem);
+
+  /* Tooltipster sidetip arrow border color */
+  --dynamix-tooltipster-sidetip-box-border-color: var(--advc-tooltip-brdr-accent-c);
 }
 /* END OF VARIABLES */
 /*************************************************/
@@ -61,6 +67,11 @@
 .tooltipster-docker-folder .preview-outbox,
 .tooltipster-docker-folder .preview-outbox * {
   box-sizing: border-box;
+}
+
+/* Removes the outer black frame around the tooltip */
+.tooltipster-docker-folder {
+  background-color: transparent !important;
 }
 
 /* Warning and Passed Text */
@@ -91,7 +102,7 @@
 
 /* Outer box of the context window */
 .tooltipster-docker-folder.tooltipster-sidetip .tooltipster-box {
-  border: 2px solid var(--advc-tooltip-brdr-c) !important;
+  /* border: 2px solid var(--advc-tooltip-brdr-c) !important; */
   border-radius: 8px;
   box-shadow: 1px 1px 10px 3px var(--cscheme-backfill4);
 }
@@ -107,23 +118,11 @@
 .tooltipster-docker-folder.tooltipster-left .tooltipster-box {
   border-right: 3px solid var(--advc-tooltip-brdr-accent-c) !important;
 }
-/* Arrow that points to open container */
-.tooltipster-docker-folder.tooltipster-bottom .tooltipster-arrow-border {
-  border-bottom-color: var(--advc-tooltip-brdr-accent-c);
-}
-.tooltipster-docker-folder.tooltipster-top .tooltipster-arrow-border {
-  border-top-color: var(--advc-tooltip-brdr-accent-c);
-}
-.tooltipster-docker-folder.tooltipster-right .tooltipster-arrow-border {
-  border-right-color: var(--advc-tooltip-brdr-accent-c);
-}
-.tooltipster-docker-folder.tooltipster-left .tooltipster-arrow-border {
-  border-left-color: var(--advc-tooltip-brdr-accent-c);
-}
 
 /* Inner box and main body of the context window */
 .preview-outbox {
-  padding: 8px;
+  padding: 5px;
+  min-height: 430px;
   color: var(--advc-tooltip-text-c);
   background-color: var(--advc-tooltip-bg-c);
 }
@@ -169,7 +168,7 @@
 .preview-outbox span[class*="cpu-"] {
   font-size: 18px;
   font-weight: bold;
-  color: var(--cscheme-accent2);
+  color: var(--advc-grapharea-tabs-cpu);
 }
 .preview-outbox .usage-disk.mm {
   height: 10px;
@@ -194,7 +193,7 @@
 .preview-outbox span[class*="mem-"] {
   font-size: 14px;
   font-weight: bold;
-  color: var(--cscheme-accent2);
+  color: var(--advc-grapharea-tabs-mem);
 }
 
 .preview-outbox .action-info {
@@ -231,7 +230,8 @@
 
 /* Tabs/buttons at top of graph area */
 .preview-outbox ul.info-tabs {
-  height: 30px;
+  /*height: 30px;*/
+  border-bottom: var(--advc-grapharea-tabs-default-brdr-c) !important;
 }
 .preview-outbox .ui-state-default {
   background: var(--advc-grapharea-tabs-default-bg-c);
@@ -253,6 +253,12 @@
   border-color: var(--advc-grapharea-tabs-acthover-brdr-c);
   border-width: 1px 1px 0 1px;
 }
+
+/* Adds transition to text and background when switching tabs */
+.preview-outbox .ui-state-default a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 .preview-outbox .ui-state-default a,
 .preview-outbox .ui-state-default a:link,
 .preview-outbox .ui-state-default a:visited {
@@ -262,11 +268,14 @@
 .preview-outbox .ui-state-default.ui-state-hover a:link,
 .preview-outbox .ui-state-default.ui-state-hover a:visited {
   color: var(--advc-grapharea-tabs-deftexthover-c);
+  background-color: var(--advc-continfo-bg-c);
 }
 .preview-outbox .ui-state-default.ui-state-active a,
 .preview-outbox .ui-state-default.ui-state-active a:link,
 .preview-outbox .ui-state-default.ui-state-active a:visited {
   color: var(--advc-grapharea-tabs-activetext-c);
+  background: var(--advc-grapharea-tabs-acthover-bg-c);
+  border-color: var(--advc-grapharea-tabs-acthover-brdr-c);
   font-weight: bold;
 }
 .preview-outbox .ui-state-default.ui-state-active.ui-state-hover a,
@@ -283,20 +292,26 @@
   height: 356px !important;
 } */
 .preview-outbox div[id*="comb-grapth-"] canvas {
-  /* height: 356px !important; */
+  /* height: 220px !important; */
   padding: 2px;
   border: 1px solid var(--advc-grapharea-brdr-c);
   border-top: 2px solid var(--advc-grapharea-brdr-top-c);
 }
 
+/* Graph Canvas Responsiveness */
+.comb-stat-graph, .cpu-stat-graph, .mem-stat-graph {
+  border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
+}
+
 /* Port Mappings and Volume Mappings areas */
 .preview-outbox .info-ports,
 .preview-outbox .info-volumes {
-  /* height: 356px !important; */
+  /* height: 220px !important; */
   overflow: auto;
   padding: 8px;
-  color: var(--text-hover) !important;
+  color: var(--advc-grapharea-tabs-infotext-c) !important;
   border: 1px solid var(--advc-grapharea-brdr-c) !important;
   border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
   font-size: 1.5rem;
+  background-color: var(--advc-continfo-bg-c);
 }
