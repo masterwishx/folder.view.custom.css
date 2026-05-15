@@ -302,6 +302,7 @@
 
 /* Graph Canvas Responsiveness */
 .comb-stat-graph, .cpu-stat-graph, .mem-stat-graph {
+  border-color: var(--advc-grapharea-brdr-c) !important;
   border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
 }
 
@@ -316,4 +317,10 @@
   border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
   font-size: 1.5rem;
   background-color: var(--advc-continfo-bg-c);
+}
+
+/* Fix dynamix CSS override */
+.info-section.ui-tabs.ui-widget.ui-widget-content {
+    border: none !important;
+    background: none !important;
 }

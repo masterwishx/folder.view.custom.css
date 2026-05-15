@@ -260,14 +260,6 @@ button.folder-dropdown:active {
   max-height: none;
 }
 
-/****** Give more space for containers *******/
-/* Autostart column */
-#docker_containers th.nine {
-  width: 0px; /*110px;*/
-  padding: 0;
-}
-
-
 /*************************************************/
 /* EXPANDED FOLDER AND NO FOLDER CONTAINER ROW */
 /*************************************************/
