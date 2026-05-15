@@ -11,7 +11,7 @@
   /* Tooltip / Advanced Preview theme colors */
   --fv3-surface-tint: rgba(255, 255, 255, 0.02);
   --fv3-hover-bg: rgba(255, 255, 255, 0.1);
-  --fv3-border: 1px solid rgba(255, 255, 255, 0.1);
+  --fv3-border: 1px solid var(--advc-grapharea-tabs-default-brdr-c);
 
   /* Dashboard: Inset layout */
   --fv3-inset-border-color: var(--cscheme-foreline1-dark);
