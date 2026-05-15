@@ -324,3 +324,9 @@
     border: none !important;
     background: none !important;
 }
+
+.info-section .ui-tabs-panel {
+    background-color: var(--fv3-surface-tint) !important;
+    border: var(--fv3-border) !important;
+    border-top: 2px solid var(--advc-grapharea-brdr-top-c) !important;
+}
