@@ -60,7 +60,7 @@
   /* Tooltipster sidetip arrow border color */
   --dynamix-tooltipster-sidetip-box-border-color: var(--advc-tooltip-brdr-accent-c);
 
-  /* Variables Tab colors */
+  /* Variables tab colors */
   --advc-env-heading-c:   var(--cscheme-interface-accent);    /* section headings */
   --advc-env-group-c:     var(--cscheme-foreline2);           /* group labels (UPPERCASE) */
   --advc-env-key-c:       var(--cscheme-accent4);             /* variable name */
@@ -329,7 +329,8 @@
   background-color: var(--advc-continfo-bg-c);
 }
 
-/* Headings and group labels (opacity reset so the color is shown as defined) */
+/* Variables tab */
+/* Headings and group labels */
 .preview-outbox .info-section .fv3-env-heading {
   color: var(--advc-env-heading-c);
 }
@@ -380,6 +381,7 @@
 .preview-outbox .info-section .fv3-env-more {
   color: var(--cscheme-link);
 }
+/* End of: Variables tab */
 
 /* Fix dynamix CSS override */
 .info-section.ui-tabs.ui-widget.ui-widget-content {
