@@ -59,6 +59,16 @@
 
   /* Tooltipster sidetip arrow border color */
   --dynamix-tooltipster-sidetip-box-border-color: var(--advc-tooltip-brdr-accent-c);
+
+  /* Variables tab colors */
+  --advc-env-heading-c:   var(--cscheme-interface-accent);    /* section headings */
+  --advc-env-group-c:     var(--cscheme-foreline2);           /* group labels (UPPERCASE) */
+  --advc-env-key-c:       var(--cscheme-accent4);             /* variable name */
+  --advc-env-value-c:     var(--cscheme-foreline1-light);     /* variable value */
+  --advc-env-muted-c:     var(--cscheme-foreline3);           /* labels, notes, dimmed text */
+  --advc-env-row-brdr-c:  var(--cscheme-backfill3);           /* separator between rows */
+  --advc-env-code-bg-c:   var(--cscheme-backfill2);           /* code block background */
+  --advc-env-code-brdr-c: var(--cscheme-backfill3);           /* code block border */
 }
 /* END OF VARIABLES */
 /*************************************************/
@@ -318,6 +328,60 @@
   font-size: 1.5rem;
   background-color: var(--advc-continfo-bg-c);
 }
+
+/* Variables tab */
+/* Headings and group labels */
+.preview-outbox .info-section .fv3-env-heading {
+  color: var(--advc-env-heading-c);
+}
+.preview-outbox .info-section .fv3-env-group {
+  color: var(--advc-env-group-c);
+}
+
+/* Variable name and value */
+.preview-outbox .info-section .fv3-env-key {
+  color: var(--advc-env-key-c);
+}
+
+.preview-outbox .info-section .fv3-env-value {
+  color: var(--advc-env-value-c);
+}
+
+/* Secondary text: labels, properties, muted text, notes, dimmed rows */
+.preview-outbox .info-section .fv3-env-label,
+.preview-outbox .info-section .fv3-env-prop,
+.preview-outbox .info-section .fv3-env-muted,
+.preview-outbox .info-section .fv3-env-note,
+.preview-outbox .info-section .fv3-env-dim {
+  color: var(--advc-env-muted-c);
+}
+
+/* Separator line between rows */
+.preview-outbox .info-section .fv3-env-row {
+  border-bottom-color: var(--advc-env-row-brdr-c);
+}
+
+/* Multi-line code/value block */
+.preview-outbox .info-section .fv3-env-code {
+  background-color: var(--advc-env-code-bg-c);
+  border-color: var(--advc-env-code-brdr-c);
+  color: var(--advc-env-value-c);
+}
+
+/* "Reveal" (show/hide secret) button, with accent color on hover */
+.preview-outbox .info-section .fv3-env-reveal {
+  color: var(--advc-env-muted-c);
+}
+
+.preview-outbox .info-section .fv3-env-reveal:hover {
+  color: var(--cscheme-accent1);
+}
+
+/* "Show more" link */
+.preview-outbox .info-section .fv3-env-more {
+  color: var(--cscheme-link);
+}
+/* End of: Variables tab */
 
 /* Fix dynamix CSS override */
 .info-section.ui-tabs.ui-widget.ui-widget-content {
